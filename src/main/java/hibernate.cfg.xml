@@ -17,6 +17,7 @@
        
         <!-- when using jpa annotations  -->
          <mapping class="com.ts.entity.Message"/>
+         <mapping class="com.ts.entity.Employee"/>
          
     </session-factory>
 </hibernate-configuration>

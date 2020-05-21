@@ -23,6 +23,11 @@ public class Message {
 	public Message( String text) {
 		this.text = text;
 	}
+
+	public Message() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	
 	
 }
