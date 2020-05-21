@@ -3,8 +3,8 @@ package com.ts;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.ts.entity.Address;
-import com.ts.entity.Employee;
+import com.ts.entity.Student;
+import com.ts.entity.Subject;
 import com.ts.hibConfig.HibernateUtil;
 
 public class App {
@@ -18,10 +18,16 @@ public class App {
 		try{
 			txn.begin();
 			
-			Address a = new Address("Jaipur", "Shashtri nagar", "India", 302909, 98);
+			Subject sub1 = session.get(Subject.class,5L);
 			
-			Employee u1 = new Employee("Jhanwar", a);
-			session.persist(u1);
+			Student s1 = new Student("Djokovic", sub1);
+			
+			System.out.println(s1.getSubject());
+			
+			session.save(s1);
+			
+			
+			
 			txn.commit();
 			
 		}catch(Exception e){

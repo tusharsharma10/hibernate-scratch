@@ -18,6 +18,8 @@
         <!-- when using jpa annotations  -->
          <mapping class="com.ts.entity.Message"/>
          <mapping class="com.ts.entity.Employee"/>
+         <mapping class="com.ts.entity.Student"/>
+         <mapping class="com.ts.entity.Subject"/>
          
     </session-factory>
 </hibernate-configuration>
